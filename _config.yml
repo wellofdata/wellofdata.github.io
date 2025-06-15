@@ -13,14 +13,15 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
 title: Well of Data 
 subtitle: 망상 공간.
 email:
+locale: "ko-KR"
 description: >- # this means to ignore newlines until "baseurl:"
-  personal archive of thoughts, ideas, and beliefs. 쏟아지는 말들, 가라앉는 생각들,
-  그리고 흩어지는 기억들. 언젠가 이 데이터들이 모이면 나라는 인간을 정의할 수 있지 않을까.
-twitter_username: username
-github_username: username
+  personal archive of thoughts, ideas, and beliefs. 
+  A track of learning what I am and what the world is.
+github_username: wellofdata
 minimal_mistakes_skin: dark
 search: true
 # search_provider: "algolia" # or "lunr"
@@ -38,7 +39,8 @@ locale: "ko-KR"
 
 # Build settings
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes@4.27.1
+remote_theme: "mmistakes/minimal-mistakes@4.27.1"
+
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
@@ -72,32 +74,32 @@ plugins:
 author:
   name   : "Taeyang Lee"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "쏟아지는 말들과 생각, 그리고 믿음의 기록. "
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/wellofdata.io/"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/wellofdata.io/"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/"
 
 defaults:
   # _posts
@@ -110,7 +112,7 @@ defaults:
       read_time: false
       show_date: true
       comments: true
-      share: true
+      share: false
       related: true
   # _pages
   - scope:
