@@ -1,5 +1,5 @@
 ---
-title: "비밀번호 관리자 프로그램 추천 (Keepass) "
+title: "비밀번호 관리자 프로그램 추천, 리뷰 (KeepassXC) "
 categories:
   - Review
 tags:
@@ -8,6 +8,7 @@ tags:
   - program
   - app
   - service
+excerpt: "비밀번호 관리자 프로그램으로 KeepassXC를 선택하게 된 계기, 다른 경쟁 프로그램과 장단점 비교."
 ---
 
 ## 계기
