@@ -1,0 +1,20 @@
+en:
+  today: '오늘'
+  yesterday: '어제'
+  tomorrow: '내일'
+  past: '%{date_range} 전'
+  future: '%{date_range} 후'
+  last_word_connector: ' '
+  words_connector: ' '
+  years:
+    one: '1 년'
+    other: '%{count} 년'
+  months:
+    one: '1 개월'
+    other: '%{count} 개월'
+  weeks:
+    one: '1 주'
+    other: '%{count} 주'
+  days:
+    one: '1 일'
+    other: '%{count} 일'

@@ -24,7 +24,6 @@ description: >- # this means to ignore newlines until "baseurl:"
 github_username: wellofdata
 minimal_mistakes_skin: dark
 search: true
-# search_provider: "algolia" # or "lunr"
 url: "https://wellofdata.github.io"
 # baseurl: "/project_foldernames"
 date_format: "%Y-%m-%d"
@@ -41,10 +40,26 @@ locale: "ko-KR"
 markdown: kramdown
 remote_theme: "mmistakes/minimal-mistakes@4.27.1"
 
+# SEO settings
+naver_site_verification: "b50ba87b5a6dbe5fe94ab2fe8d5b2f6a0cec2869"
+
+
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+
+pagination:
+  enabled: true
+  collection: 'posts'
+  per_page: 5
+  permalink: '/page/:num/'  # Pages are index.html inside this folder (default)
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  trail:
+    before: 2
+    after: 2
+
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
@@ -64,12 +79,28 @@ include:
 
 # Plugins (previously gems:)
 plugins:
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-timeago #manually installed
+
+lunr:
+  search_within_pages:true
+search_full_content: true
+
+jekyll_timeago:
+  depth: 2
+  translations_path: '_data/jekyll-timeago/*.yml'
+  default_locale: 'ko'
+  fallbacks: true
+  available_locales:
+    - 'en'
+    - 'es'
+    - 'fr'
+
 
 author:
   name   : "Taeyang Lee"
