@@ -143,7 +143,7 @@ defaults:
       author_profile: true
       read_time: false
       show_date: true
-      comments: true
+      comments: false
       share: false
       related: true
   # _pages
@@ -153,6 +153,16 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+comments:
+  providoer: "giscus"
+  giscus:
+    repo_id: "R_kgDOO6TQgw"
+    category_name: "Announcements"
+    category_id: "DIC_kwDOO6TQg84Crhee"
+    discussion_term: "pathname"
+    reactions_enabled: 1
+    them: "dark"
 
 category_archive:
   type: liquid

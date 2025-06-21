@@ -178,7 +178,7 @@ excerpt:  "셀프 포스팅 내용 요약"
 
 #### 2. Custom Github Action workflow 이용하는 방법
 
-처음에 repo의 이름을 `<username>.github.io`로 변경하고, repo의 `설정(Settings)` 에 들어가서 `Pages` 항목을 찾는 건 1번 방법과 동일하다. 이후 Deploy from branch 대신 `Github Action`을 선택하고, 템플릿 검색창에 `Deploy Jekyll site to Pages` 를 검색해서 이 템플릿을 그대로 사용해서 새로운 워크플로우를 추가하면 된다. 대신 이 방식은 `gh-pages`라는 branch를 따로 만들어줘야 한다. (`master` branch에 소스 파일을 push하면, 자동으로 Github 서버 측에서 빌드를 수행, 결과물을 `gh-pages` 브랜치에 push해주는 방식인 듯.) 이딴 짓 왜 하나 싶지만 몇 가지 장점이 있다고 한다. 디버깅이 쉽다던가, 커스텀 도메인을 사용할때 CNAME 파일을 만들 필요가 없다던가. 근데 아직 크게 체감은 안된다.
+처음에 repo의 이름을 `<username>.github.io`로 변경하고, repo의 `설정(Settings)` 에 들어가서 `Pages` 항목을 찾는 건 1번 방법과 동일하다. 이후 Deploy from branch 대신 `Github Action`을 선택하고, 템플릿 검색창에 `Deploy Jekyll site to Pages` 를 검색해서 이 템플릿을 그대로 사용해서 새로운 워크플로우를 추가하면 된다. ~~대신 이 방식은 `gh-pages`라는 branch를 따로 만들어줘야 한다. (`master` branch에 소스 파일을 push하면, 자동으로 Github 서버 측에서 빌드를 수행, 결과물을 `gh-pages` 브랜치에 push해주는 방식인 듯.)~~ <u> [**수정.** 최신 방식은 artifact에 빌드한 뒤에 직접 배포하는 방식이므로 gh-pages 브랜치를 만들 필요가 없음.] </u>이딴 짓 왜 하나 싶지만 몇 가지 장점이 있다고 한다. 디버깅이 쉽다던가, 커스텀 도메인을 사용할때 CNAME 파일을 만들 필요가 없다던가. 근데 아직 크게 체감은 안된다.
 
 #### Github Pages로 호스팅할때 알아야 할 제한사항
 
@@ -195,7 +195,7 @@ excerpt:  "셀프 포스팅 내용 요약"
     [Github pages page limits](https://docs.github.com/ko/pages/getting-started-with-github-pages/github-pages-limits)
 
 2. **용량 제한**
-   - 소스 저장소는 1GB 제한을 추천. 100MiB 이상의 개별 파일은 업로드 불가
+   - 소스 저장소는 1GB 제한을 권장. 100MiB 이상의 개별 파일은 업로드 불가
    - 배포되는 사이트 용량은 1GB미만 이어야 함
    - 빌드 및 배포에 10분이상 걸리면 timeout
    - soft bandwidth limit of 100GB/month
