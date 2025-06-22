@@ -8,7 +8,7 @@ tags:
   - history
   - 한국사
   - 한국사능력검정시험 1급
-excerpt: "한국사능력검정시험 1급 내용을 바탕으로 만든 Anki 플래시카드 덱 공유 입니다. This posts shares the author's commitment on making Anki deck that helps the person who wants to achieve a Korean history exam"
+excerpt: "한국사능력검정시험 1급 내용을 바탕으로 만든 Anki 플래시카드 덱 공유 입니다. This posts shares the author's commitment on making Anki deck that helps the person who wants to learn a Korean history"
 comments: true
 ---
 

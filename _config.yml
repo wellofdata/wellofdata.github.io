@@ -155,7 +155,7 @@ defaults:
       author_profile: true
 
 comments:
-  providoer: "giscus"
+  provider: "giscus"
   giscus:
     repo_id: "R_kgDOO6TQgw"
     category_name: "Announcements"
