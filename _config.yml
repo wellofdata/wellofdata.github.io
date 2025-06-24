@@ -25,7 +25,12 @@ description: >- # this means to ignore newlines until "baseurl:"
 github_username: wellofdata
 minimal_mistakes_skin: air
 search: true
+<<<<<<< Updated upstream
 url: "https://wellofdata.github.io"
+=======
+# search_provider: "algolia" # or "lunr"
+url: "https://www.taeyanglee.kr"
+>>>>>>> Stashed changes
 # baseurl: "/project_foldernames"
 date_format: "%Y-%m-%d"
 repository: "wellofdata/wellofdata.github.io"
