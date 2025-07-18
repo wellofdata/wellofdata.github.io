@@ -39,7 +39,49 @@ impl Deref for String {
 }
 ```
 
-> 컴파일러는 T 타입의 참조가 필요할 때, U 타입의 참조를 가지고 있다면 U가 Deref<Target = T> 트레이트를 구현했는지 확인합니다. 구현했다면, U를 T로 자동으로 역참조하여 변환해 줍니다.
-> by Gemini
+> *컴파일러는 T 타입의 참조가 필요할 때, U 타입의 참조를 가지고 있다면 U가 Deref<Target = T> 트레이트를 구현했는지 확인합니다. 구현했다면, U를 T로 자동으로 역참조하여 변환해 줍니다.*
+> *by Gemini*
 
-참조자에 대한 자동 타입 변환 장치인 듯하다. 스마트 포인터에 사용하는 것이 가장 적절하다고 한다. C++ 공부할때 스마트 벡터인지 스마트 메모리인지 그런게 있었던 것 같은데 (자동으로 메모리 해제되는) 그것이랑 비슷한 건지는 잘 모르겠다.
+참조자에 대한 자동 타입 변환 장치인 듯하다. 스마트 포인터에 사용하는 것이 가장 적절하다고 한다.학기 중에 프로젝트 한다고 C++ 공부할때 스마트 벡터인지 스마트 메모리인지 그런게 있었던 것 같은데 (자동으로 메모리 해제되는) 그것이랑 비슷한 건지는 잘 모르겠다.
+
+#### Marker trait, dynamically sized trait (DST)
+
+str 은 DST 로 컴파일 타임에 사이즈를 알 수 없다. (Sized trait 미구현) 반면, &str 타입은 사이즈가 존재한다. (8<길이>+8<포인터>=16 바이트)
+
+#### 예시 정의들
+
+##### trait bounds
+
+``` rust
+fn print_if_even<T>(n: T)
+where
+    T: IsEven + Debug
+//  ^^^^^^^^^^^^^^^^^
+//  This is a `where` clause
+{
+    // [...]
+}
+```
+
+##### traits with concret type
+
+``` rust
+trait IsEven {
+    fn is_even(&self) -> bool;
+}
+
+impl IsEven for i32 {
+    fn is_even(&self) -> bool {
+        self % 2 == 0
+    }
+}
+
+impl IsEven for i64 {
+    fn is_even(&self) -> bool {
+        self % 2 == 0
+    }
+}
+
+// Etc.
+```
+
