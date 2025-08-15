@@ -7,7 +7,6 @@ tags:
   - 전기기사
   - 필기
   - 자격증
-excerpt: "비밀번호 관리자 프로그램으로 KeepassXC를 선택하게 된 계기, 다른 경쟁 프로그램과 장단점 비교. This post summarize and compare the characteristics of programs and services used to manage security information like passwords. Bitwarden, 1Password, and KeepassXC were compared and evaluated under the codition established by the author."
 ---
 ## 응시 후기
 
