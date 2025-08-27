@@ -57,7 +57,7 @@ tags:
 > e.g.)     `sender1_at_gmail_com_randomstrings@simplelogin.com`
 > `sender1_at_gmail_com_randomstrings2@simplelogin.com`
 
-해당 reverse-alias 로 메일을 보내면, 이메일 별칭 서비스 제공업체가 이를 중개해서 본래 주소로 메일을 보내준다. 따라서 100명에게 메일을 보내려면 100명의 역별칭 주소를 생성해야 하는데, Gmail의 다른 주소로 보내기 방식을 사용하면 한번 연결해두면 보내는 사람 주소만 바꾸면 되니까 받는 사람이 많을 때는 이 방식이 더 유리하다. 근데 뭐 사실 별칭으로 여러명 한테 메일을 보내는 일은 잘 없긴 하다. 사업체면 애초에 전문적인 이메일 서비스를 사용해야 할 것이고 (유료로), 개인의 경우야 뭐...회사 도메인 조차 없는 소기업에서 십년간 활용해온 내 개인 이메일을 지킬 때 정도 필요하려나 ㅋㅋㅋ 내 생각엔 그냥 새 메일 주소 하나 파는게 빠를 것 같다...
+해당 reverse-alias 로 메일을 보내면, 이메일 별칭 서비스 제공업체가 이를 중개해서 본래 주소로 메일을 보내준다. 따라서 100명에게 메일을 보내려면 100명의 역별칭 주소를 생성해야 하는데, Gmail의 다른 주소로 보내기 방식을 사용하면 한번 연결해두면 보내는 사람 주소만 바꾸면 되니까 받는 사람이 많을 때는 이 방식이 더 유리하다. 근데 뭐 사실 별칭으로 여러명 한테 메일을 보내는 일은 잘 없긴 하다. 사업체면 애초에 전문적인 이메일 서비스를 사용해야 할 것이고 (유료로), 개인의 경우야 뭐...회사 도메인 조차 없는 소기업에서 십년간 활용해온 내 개인 이메일을 지킬 때 정도 필요하려나? 내 생각엔 그냥 새 메일 주소 하나 파는게 빠를 것 같다...
 
 > 관련 커뮤니티 글  
 > [How to use Gmail SMTP SEND FROM Email addresses which use Cloudflare Email routing](https://community.cloudflare.com/t/solved-how-to-use-gmail-smtp-to-send-from-an-email-address-which-uses-cloudflare-email-routing/382769)
